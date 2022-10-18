@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <!-- <li class = "list-group-item"><a href="" > XXXX </a></li> -->
+  <!-- podemos usar routerlink porque ys tenemos rl routing module-->
+<!--   <li class = "list-group-item"> <a routerLink="/home">home</a> </li>
+  <li class = "list-group-item" > <a routerLink="/about">about</a> </li>
+  <li class = "list-group-item" > <a routerLink="/contact">contact</a> </li> -->
+
+  <a [routerLink]="ruta.path" class="list-group-item" *ngFor="let ruta of rutas">
+    {{ruta.name}}</a>
+</ul>
